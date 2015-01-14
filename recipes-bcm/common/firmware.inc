@@ -1,8 +1,5 @@
-RPIFW_SRCREV ?= "43c5b2fc9bdb0a43ba67661b8677445e71ae9e82"
-RPIFW_DATE ?= "20140817"
-RPIFW_SRC_URI ?= "git://github.com/raspberrypi/firmware.git;protocol=git;branch=master"
-RPIFW_S ?= "${WORKDIR}/git"
-
-SRC_URI = "${RPIFW_SRC_URI}"
-SRCREV = "${RPIFW_SRCREV}"
-PV = "${RPIFW_DATE}"
+RPIFW_S ?= "${WORKDIR}"
+RPIFW_PV ?= "c9223d1"
+SRC_URI[md5sum] = "4ad7c9e9275f42e647e2ff861f94bf36"
+SRC_URI[sha256sum] = "18f411e28fec70e8248f3f8ba5d02f3374a93aed1596f7ac3308cc529569d728"
+SRC_URI = "http://www.technux.se/archive/raspberrypi/firmware/firmware-${RPIFW_PV}.tar.gz"
